@@ -15,8 +15,8 @@ public class LocalRegistry {
     /**
      * 注册服务
      *
-     * @param serviceName
-     * @param implClass
+     * @param serviceName 服务
+     * @param implClass   服务实现类
      */
     public static void register(String serviceName, Class<?> implClass) {
         map.put(serviceName, implClass);
@@ -25,8 +25,8 @@ public class LocalRegistry {
     /**
      * 获取服务
      *
-     * @param serviceName
-     * @return
+     * @param serviceName 服务
+     * @return 服务实现类
      */
     public static Class<?> get(String serviceName) {
         return map.get(serviceName);
