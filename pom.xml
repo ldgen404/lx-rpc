@@ -12,6 +12,7 @@
         <module>example-consumer</module>
         <module>example-provider</module>
         <module>lx-rpc-easy</module>
+        <module>lx-rpc-core</module>
     </modules>
 
     <properties>
