@@ -17,7 +17,7 @@ public class EasyConsumerExample {
         User user = new User();
         user.setName("ldgen");
         //调用 - 动态代理
-        UserService userService = ServiceProxyFactory.getPorxy(UserService.class);
+        UserService userService = ServiceProxyFactory.getProxy(UserService.class);
         User newUser = userService.getUser(user);
         if (newUser != null) {
             System.out.println("用户名：" + newUser.getName());

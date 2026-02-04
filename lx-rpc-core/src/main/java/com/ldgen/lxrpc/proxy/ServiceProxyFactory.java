@@ -16,7 +16,7 @@ import java.lang.reflect.Proxy;
 // 服务代理工厂（用于创建代理对象）
 public class ServiceProxyFactory {
 
-    public static <T> T getPorxy(Class<T> serviceClazz) {
+    public static <T> T getProxy(Class<T> serviceClazz) {
         return (T) Proxy.newProxyInstance(
                 serviceClazz.getClassLoader(),
                 new Class[]{serviceClazz},
